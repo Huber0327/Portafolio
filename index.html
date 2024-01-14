@@ -1,298 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <div class="inicio contenedor" id="inicio"> 
+        <h3>Hola, soy</h3>
+        <h1>HUBERTH GARCIA</h1>
+        <p>Ingenierio en Sistemas</p>
+        <div class="contenedor-botones">
+            <a href="./certificados/Curriculum (2).pdf" download="CV-Huberth.pdf" class="btn">Descargar CV</a>
+            <a href="https://wa.me/+50588654032" class="btn btn2">Hablemos</a>
+        </div>
+        
+        <div class="contenedor-img">
+            <img src="img/img.png" alt="">
+        </div>
+        <div class="contenedor-redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+        </div>
+    </div>
 
-    <!--=============== FAVICON ===============-->
-    <link
-      rel="shortcut icon"
-      href=" assets/img/favicon.png"
-      type="image/x-icon"
-    />
+    <nav class="navigation">
+        <ul>
+            <li class="list active">
+                <a href="#inicio">
+                    <span class="icon"><i class="fa-solid fa-house"></i></span>
+                    <span class="text">Inicio</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#sobre-mi">
+                    <span class="icon"><i class="fa-solid fa-user"></i></i></span>
+                    <span class="text">Sobre mi</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#experiencia">
+                    <span class="icon"><i class="fa-solid fa-sliders"></i></span>
+                    <span class="text">Experiencia</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#porfolio">
+                    <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                    <span class="text">Porfolio</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="#contacto">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <span class="text">Contacto</span>
+                </a>
+            </li>
+            <div class="indicator">
 
-    <!--=============== REMIX ICONS ===============-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-
-    <title>Huberth-Garcia</title>
-  </head>
-  <body>
-    <!--=============== HEADER PROFILE ===============-->
-    <header class="profile container">
-      <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-      <div class="profile__container grid">
-        <div class="profile__data">
-          <div class="profile__border">
-            <div class="profile__perfil">
-              <img src="assets/img/Perfile.jpg" alt="" />
             </div>
-          </div>
-          <h2 class="profile__name">Huberth Garcia</h2>
-          <h3 class="profile__profession">Desarrollador Web</h3>
-
-          <ul class="profile__social">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              class="profile__social-link"
-            >
-              <i class="ri-instagram-line"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              class="profile__social-link"
-            >
-              <i class="ri-linkedin-box-line"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              class="profile__social-link"
-            >
-              <i class="ri-github-line"></i>
-            </a>
-          </ul>
-        </div>
-
-        <div class="profile__info grid">
-          <div class="profile__info-group">
-            <h3 class="profile__info-number">1</h3>
-            <p class="profile__info-description">Años de <br />Experiencia</p>
-          </div>
-        
-        
-          <div class="profile__info-group">
-            <h3 class="profile__info-number">10</h3>
-            <p class="profile__info-description">Proyectos <br />Completos</p>
-          </div>
-        
-        
-          <div class="profile__info-group">
-            <h3 class="profile__info-number">7</h3>
-            <p class="profile__info-description">Clientes <br />Sastifecho</p>
-          </div>
-        </div>
-
-        <div class="profile__buttons">
-          <a download="" href="assets/pdf/CurriculumActu.pdf" class="button">
-            Descargar CV <i class="ri-download-line"></i
-          ></a>
-          <div class="profile__buttons-small">
-            <a
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=88654032&text=Hola, Quisiera informacion sobre tus Servicios"
-              class="button button__small button__gray"
-            >
-              <i class="ri-whatsapp-line"></i>
-            </a>
-            <a
-              target="_blank"
-              href="https://m.me/bedimcode"
-              class="button button__small button__gray"
-            >
-              <i class="ri-messenger-line"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <section class="filters container">
-        <!--=============== FILTERS TABS ===============-->
-        <ul class="filters__content">
-            <button class="filters__button filter-tab-active" data-target="#projects">
-                Proyectos
-            </button>
-            <button class="filters__button " data-target="#skills">
-                Conocimientos
-            </button>
         </ul>
-
-        <div class="filters__sections">
-          <!--=============== PROJECTS ===============-->
-          <div class="projects__content grid filters__active" data-content id="projects">
-            <article class="projects__card">
-                <img src="assets/img/farmacia.png" alt="" class="projects__img">
-
-                <div class="projects__modal">
-                    <div>
-                        <spam class="projects__subtitle">Web </spam>
-                        <h3 class="projects__title">Farmacia Manager</h3>
-                        <a href="http://farmacia.infinityfreeapp.com/" class="projects__button button button__small">
-                            <i class="ri-link"></i>
-                        </a>
+    </nav>
+    <!-- SOBRE MI -->
+    <div class="sobre-mi contenedor" id="sobre-mi">
+        <h2 class="titulo-seccion">Sobre Mí</h2>
+        <div class="fila">
+            <div class="contenedor-img col">
+                <img src="img/foto.jpg" alt="">
+            </div>
+            
+            <div class="info col">
+                <div class="contenedor-boxs">
+                    <div class="box">
+                        <p>Experiencia</p>
+                        <p class="num">+1 años</p>
+                    </div>
+                    <div class="box">
+                        <p>Clientes</p>
+                        <p class="num">+5 satisfechos</p>
+                    </div>
+                    <div class="box">
+                        <p>Proyectos</p>
+                        <p class="num"> +3 terminados</p>
                     </div>
                 </div>
-            </article>
+                <p class="presentacion">Soy un desarrollador web recién egresado, apasionado por la creación y mejora de experiencias en línea. Poseo habilidades en programación, diseño y resolución de problemas, con un enfoque en el desarrollo web. Estoy emocionado por aprender y contribuir al mundo digital con soluciones innovadoras y creativas.</p>
 
-            <article class="projects__card">
-                <img src="assets/img/project2.jpg" alt="" class="projects__img">
 
-                <div class="projects__modal">
-                    <div>
-                        <spam class="projects__subtitle">Web</spam>
-                        <h3 class="projects__title">GymManager</h3>
-                        <a href="#" class="projects__button button button__small">
-                            <i class="ri-link"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <article class="projects__card">
-                <img src="assets/img/project3.jpg" alt="" class="projects__img">
-
-                <div class="projects__modal">
-                    <div>
-                        <spam class="projects__subtitle">Web</spam>
-                        <h3 class="projects__title">Inventario</h3>
-                        <a href="#" class="projects__button button button__small">
-                            <i class="ri-link"></i>
-                        </a>
-                    </div>
-                </div>
-            </article>
-          </div>
-          <!--=============== SKILLS ===============-->
-          <div class="skills__content grid " data-content id="skills">
-             <div class="skills__area">
-              <h3 class="skills__title">
-                Frontend
-              </h3>
-              <div class="skills__box">
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">HTML</h3>
-                      <span class="skills__level">Basic</span>
-                    </div>
-                  </div>
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">CSS</h3>
-                      <span class="skills__level">Avansado</span>
-                    </div>
-                  </div>
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">JavaScript</h3>
-                      <span class="skills__level">Intermedio</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">React</h3>
-                      <span class="skills__level">Avansado</span>
-                    </div>
-                  </div>
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">Boostrap</h3>
-                      <span class="skills__level">Intermedio</span>
-                    </div>
-                  </div>
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">Git </h3>
-                      <span class="skills__level">Intermedio</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             </div>
-             <div class="skills__area">
-              <h3 class="skills__title">
-                Backend developer
-              </h3>
-              <div class="skills__box">
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">Php</h3>
-                      <span class="skills__level">Basic</span>
-                    </div>
-                  </div>
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">Mysql</h3>
-                      <span class="skills__level">Avansado</span>
-                    </div>
-                  </div>
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">Python</h3>
-                      <span class="skills__level">Intermedio</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="skills__group">
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">Firebase</h3>
-                      <span class="skills__level">Avansado</span>
-                    </div>
-                  </div>
-                  <div class="skills__data">
-                    <i class="ri-checkbox-circle-line"></i>
-
-                    <div>
-                      <h3 class="skills__name">Node.js</h3>
-                      <span class="skills__level">Intermedio</span>
-                    </div>
-                  </div>
-                
-                </div>
-              </div>
-             </div>
-             
-          </div>
+                <a href="https://wa.me/+50588654032" class="btn btn2">Hablemos</a>
+            </div>
         </div>
-      </section>
-    </main>
+    </div>
 
-    <!--=============== FOOTER ===============-->
-    <footer class="footer container">
-      <span class="footer__copy">
-        &#169; Huberth-Garcia- Todos los derechos reservados
-      </span>
+    <!-- LENGUAJES -->
+    <div class="experiencia contenedor" id="experiencia">
+        <h2 class="titulo-seccion">LENGUAJES</h2>
+        <div class="fila">
+            <div class="col">
+                <h3>Desarrollador Front-End</h3>
+                <div class="info">
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">HTML</span>
+                        <span class="nivel">Intermedio</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">CSS</span>
+                        <span class="nivel">Intermedio</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">JAVASCRIPT</span>
+                        <span class="nivel">Intermedio</span>
+                    </div>
+                 
+                </div>
+            </div>
+            <div class="col">
+                <h3>Desarrollador Back-End</h3>
+                <div class="info">
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">NODE JS</span>
+                        <span class="nivel">Intermedio</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">PHP</span>
+                        <span class="nivel">Intermedio</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">MY SQL</span>
+                        <span class="nivel">Intermedio</span>
+                    </div>
+                    <div class="item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="skill">PYTHON</span>
+                        <span class="nivel">Intermedio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="titulo-seccion">Servicios</h2>
+        <div class="fila">
+            <div class="servicio">
+                <h2 class="titulo">Instalación de Cámaras CCTV</h2>
+                <ul>
+                    <li>Implementación de sistemas de videovigilancia para garantizar la seguridad.</li>
+                    <li>Configuración y mantenimiento de cámaras de circuito cerrado.</li>
+                    <li>Asesoramiento en la selección de equipos según necesidades específicas.</li>
+                </ul>
+            </div>
+            <div class="servicio">
+                <h2 class="titulo">Desarrollo Web</h2>
+                <ul>
+                    <li>Creación de sitios web a medida, adaptados a las necesidades del cliente.</li>
+                    <li>Programación y desarrollo de funcionalidades interactivas.</li>
+                    <li>Optimización para dispositivos móviles y navegadores modernos.</li>
+                </ul>
+            </div>
+            <div class="servicio">
+                <h2 class="titulo">Creación de Contenido</h2>
+                <ul>
+                    <li>Generación de contenido atractivo y relevante para sitios web y redes sociales.</li>
+                    <li>Producción de material multimedia, como imágenes y videos promocionales.</li>
+                    <li>Optimización de contenido para mejorar la visibilidad en los motores de búsqueda.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <script>
+            function verDemo(rutaPDF) {
+                // Abre el PDF en una nueva ventana o pestaña
+                window.open(rutaPDF, '_blank');
+            }
+        </script>
+    <!-- PORFOLIO -->
+    <div class="porfolio contenedor" id="porfolio">
+        <h2 class="titulo-seccion">Certificaciones</h2>
+        <div class="fila">
+            <div class="item">
+                <img src="certificados/img/camaras.jpg" alt="">
+                <p class="descripcion">CAMARAS DE SEGURIDAD</p>
+                <p class="descripcion">Instituto: Uni Prosgrado</p>
+                
+                <button class="btn btn2" onclick="verDemo('./certificados/certificado.pdf')">Ver Certificacion</button>
+            </div>
+            <div class="item">
+                <img src="certificados/img/certificad.png" alt="">
+                <p class="descripcion">DESARROLLO WEB</p>
+                <p class="descripcion">Instituto: Mentors international</p>
+                <!--<span>+505 88654032</span> -->
+                <button class="btn btn2" onclick="verDemo('./certificados/Certificado_Desarrollo.pdf')">Ver Certificacion</button>
+            </div>
+            <div class="item">
+                <img src="certificados/img/certificadophp.png" alt="">
+                <p class="descripcion">PHP</p>
+                <p class="descripcion">Instituto: Inatec Manuel Olivares</p>
+                <!--<span>+505 88654032</span> -->
+                <button class="btn btn2" onclick="verDemo('./certificados/certificado.pdf')">Ver Certificacion</button>
+            </div>
+            <div class="item">
+                <img src="certificados/img/excelsinsa.png" alt="">
+                <p class="descripcion">EXCEL BASICO</p>
+                <p class="descripcion">Instituto: Sinsa Aura Virtual</p>
+                <!--<span>+505 88654032</span> -->
+                <a href="./certificados/Keystone_-_Victoria_Interna (1).pdf"></a>
+                <button class="btn btn2" onclick="verDemo('./certificados/Excel_bsico.pdf')">Ver Certificacion</button>
+            </div>
+            <div class="item">
+                <img src="certificados/img/keytone.png" alt="">
+                <p class="descripcion">KEYSTONE </p>
+                <p class="descripcion">Instituto: Mentors international</p>
+                <!--<span>+505 88654032</span> -->
+                <button class="btn btn2" onclick="verDemo('./certificados/Keystone_-_Victoria_Interna (1).pdf')">Ver Certificacion</button>
+            </div>
+            <div class="item">
+                <img src="certificados/img/excelbasicoina.png" alt="">
+                <p class="descripcion">EXCEL BASICO </p>
+                <p class="descripcion">Instituto: Inatec</p>
+                <!--<span>+505 88654032</span> -->
+                <button class="btn btn2" onclick="verDemo('./certificados/certificadoexcel.pdf')">Ver Certificacion</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="contacto contenedor" id="contacto">
+        <h2 class="titulo-seccion">Contacto</h2>
+        <div class="fila">
+            <div class="col">
+                <div class="item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>EMAIL</span>
+                    <span>ghuberalexander8@gmail.com</span>
+                    <a href="#">Enviar un mensaje</a> 
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <span>MESSENGER</span>
+                    <span>Alexander</span>
+                    <a href="#">Enviar un mensaje</a> 
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>WHATSAPP</span>
+                    <span>Tigo +505 88654032</span>
+                    <span>Claro +505 82222524</span>
+                    <a href="https://wa.me/+50588654032">Enviar un mensaje</a> 
+                </div>
+            </div>
+            <div class="col formulario">
+                <input type="text" placeholder="Ingresa tu nombre">
+                <input type="text" placeholder="Ingresa tu correo">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+                <button class="btn btn2">Enviar Mensaje</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <span>Gracias por visitar mi Perfil</span>
+       <!--  <a href="#">Inicio</a>
+        <a href="#">Sobre mí</a>
+        <a href="#">Experiencia</a>
+        <a href="#">Porfolio</a>
+        <a href="#">Contacto</a> -->
     </footer>
-  
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="assets/js/scrollreveal.min.js"></script>
-
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
